@@ -84,7 +84,7 @@ const option = {
 
 	//discord
 	console.log("I:[DISCORD]:syoch login...");
-	var client_syoch = await discord_login(discord, "NTcyMzgwODAxNDU5NjgzMzI4.XcqNVQ.WUi0lnTgVzCUfYGuVCKXlQAjJNY");
+	var client_syoch = await discord_login(discord, require("fs").readFileSync("token").toString());
 	//kuromoji
 
 	console.log("D:[OBJECT ]:makeing kuromoji object");
